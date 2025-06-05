@@ -5,10 +5,11 @@ body, html {
 
 h1 {
   display: flex;
-  justify-content: center;
-  align-items: flex-start;
+  justify-content: center;  
+  align-items: center;      
   padding-top: 40px;
-  margin-bottom: 10px;  
+  margin-bottom: 10px;
+  text-align: center;       
 }
 
 .content-wrapper {
@@ -21,11 +22,11 @@ h1 {
   gap: 20px;
 }
 
-/* Move image container and button up */
+
 #generated-image-container,
 .button-container {
   position: relative;
-  top: -60px; /* Adjust this value to control how far up */
+  top: -60px; 
 }
 
 #generated-image-container {
