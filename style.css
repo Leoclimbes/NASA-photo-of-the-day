@@ -16,17 +16,10 @@ h1 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;  
+  justify-content: flex-start; 
   padding: 20px;
   min-height: 100vh;       
   gap: 20px;
-}
-
-
-#generated-image-container,
-.button-container {
-  position: relative;
-  top: -60px; 
 }
 
 #generated-image-container {
@@ -58,6 +51,9 @@ h1 {
   justify-content: center;
   align-items: center;
 }
+
+/* Removed top: -60px from both containers */
+
 
 .earth-button {
   background-color: #0B3D91;       
