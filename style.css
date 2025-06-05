@@ -1,0 +1,98 @@
+body, html {
+  height: 100%;
+  margin: 0;
+}
+
+h1 {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 40px;
+  margin-bottom: 10px;  
+}
+
+
+.content-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;  
+  padding: 20px;
+  min-height: 100vh;       
+  gap: 20px;
+}
+
+#generated-image-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  margin: 0 auto;
+  max-width: 90%;
+}
+
+#generated-image-container img {
+  width: 400px;           
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+  margin-top: 20px;
+}
+
+#generated-image-container h2,
+#generated-image-container p {
+  text-align: center;
+  max-width: 700px;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.earth-button {
+  background-color: #0B3D91;       
+  color: white;
+  font-weight: bold;
+  font-size: 1.1rem;
+  text-transform: uppercase;       
+  letter-spacing: 0.15em;         
+  padding: 12px 40px;
+  border: none;
+  border-radius: 8px;              
+  box-shadow: 0 0 10px rgba(11, 61, 145, 0.7);  
+  font-family: 'Arial Black', Arial, sans-serif;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+
+.earth-button::before {
+  content: "";
+  position: absolute;
+  left: 10%;
+  bottom: 6px;
+  width: 80%;
+  height: 3px;
+  background-color: #CE1126;        
+  border-radius: 2px;
+  transform: rotate(-15deg);
+  opacity: 0.8;
+  pointer-events: none;
+}
+
+
+.earth-button:hover {
+  box-shadow: 0 0 20px rgba(11, 61, 145, 1);
+  transform: scale(1.05);
+}
+
+
+.earth-button:active {
+  transform: scale(0.97);
+  box-shadow: 0 0 8px rgba(11, 61, 145, 0.6);
+}
