@@ -52,7 +52,7 @@ h1 {
   align-items: center;
 }
 
-/* Removed top: -60px from both containers */
+
 
 
 .earth-button {
@@ -97,4 +97,85 @@ h1 {
   box-shadow: 0 0 8px rgba(11, 61, 145, 0.6);
 } 
 
- 
+.solar-system {
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 250px;
+  height: 250px;
+  z-index: -1; 
+  pointer-events: none;
+}
+
+.sun {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  background: yellow;
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 0 20px 10px rgba(255, 255, 0, 0.5);
+}
+
+.orbit {
+  position: absolute;
+  border: 1px dashed rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.orbit1 {
+  width: 80px;
+  height: 80px;
+  animation: spin 6s linear infinite;
+}
+
+.orbit2 {
+  width: 120px;
+  height: 120px;
+  animation: spin 10s linear infinite;
+}
+
+.orbit3 {
+  width: 160px;
+  height: 160px;
+  animation: spin 14s linear infinite;
+}
+
+.planet {
+  width: 12px;
+  height: 12px;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 100%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 0 5px rgba(255,255,255,0.6);
+}
+
+.planet1 {
+  background: lightblue;
+}
+
+.planet2 {
+  background: lightgreen;
+}
+
+.planet3 {
+  background: orange;
+}
+
+@keyframes spin {
+  from {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  to {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
