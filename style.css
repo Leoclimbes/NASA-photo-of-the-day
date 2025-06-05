@@ -11,7 +11,6 @@ h1 {
   margin-bottom: 10px;  
 }
 
-
 .content-wrapper {
   display: flex;
   flex-direction: column;
@@ -20,6 +19,13 @@ h1 {
   padding: 20px;
   min-height: 100vh;       
   gap: 20px;
+}
+
+/* Move image container and button up */
+#generated-image-container,
+.button-container {
+  position: relative;
+  top: -60px; /* Adjust this value to control how far up */
 }
 
 #generated-image-container {
@@ -70,7 +76,6 @@ h1 {
   overflow: hidden;
 }
 
-
 .earth-button::before {
   content: "";
   position: absolute;
@@ -85,12 +90,10 @@ h1 {
   pointer-events: none;
 }
 
-
 .earth-button:hover {
   box-shadow: 0 0 20px rgba(11, 61, 145, 1);
   transform: scale(1.05);
 }
-
 
 .earth-button:active {
   transform: scale(0.97);
